@@ -1,0 +1,78 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            {{ __('Tambah Data Produk') }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <form method="POST" action="{{ route('produk.store') }}">
+                        @csrf
+
+                        <div class="row mb-3">
+                            <label for="produk" class="col-md-4 col-form-label text-md-end">{{ __('Produk') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="produk" type="text" class="form-control @error('produk') is-invalid @enderror" name="produk" value="{{ old('produk') }}">
+
+                                @error('produk')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="stok" class="col-md-4 col-form-label text-md-end">{{ __('Stok') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="stok" type="number" min="1" class="form-control @error('stok') is-invalid @enderror" name="stok" value="{{ old('stok') }}">
+
+                                @error('stok')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="harga" class="col-md-4 col-form-label text-md-end">{{ __('Harga') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="harga" type="number" min="1" class="form-control @error('harga') is-invalid @enderror" name="harga" value="{{ old('harga') }}">
+
+                                @error('harga')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-0">
+                            <div class="col-md-8 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Simpan') }}
+                                </button>
+                                <a href="{{ route('produk.index') }}" class="btn btn-danger">
+                                    {{ __('Batal') }}
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
