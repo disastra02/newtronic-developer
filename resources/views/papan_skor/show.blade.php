@@ -8,11 +8,18 @@
         }
 
         .text-skor.basket {
-            font-size: 7.5rem !important;
+            font-size: 5.5rem !important;
         }
 
         .text-skor.voli {
-            font-size: 7.5rem !important;
+            font-size: 5.5rem !important;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .text-skor {
+                font-size: 3.5rem !important;
+                font-weight: bolder;
+            }
         }
     </style>
 @endsection
