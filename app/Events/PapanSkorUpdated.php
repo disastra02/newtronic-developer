@@ -14,7 +14,7 @@ class PapanSkorUpdated implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $tipe_olahraga;
+    public $jenis_olahraga;
     public $skor_a;
     public $skor_b;
     public $babak;
@@ -25,9 +25,9 @@ class PapanSkorUpdated implements ShouldBroadcast
     /**
      * Create a new event instance.
      */
-    public function __construct($tipe_olahraga, $skor_a, $skor_b, $babak, $tipe, $tipe_jumlah_a, $tipe_jumlah_b)
+    public function __construct($jenis_olahraga, $skor_a, $skor_b, $babak, $tipe, $tipe_jumlah_a, $tipe_jumlah_b)
     {
-        $this->tipe_olahraga = $tipe_olahraga;
+        $this->jenis_olahraga = $jenis_olahraga;
         $this->skor_a = $skor_a;
         $this->skor_b = $skor_b;
         $this->babak = $babak;
