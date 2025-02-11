@@ -52,7 +52,7 @@
                             </div>
                         </div>
 
-                        <div class="row justify-content-center mb-0">
+                        <div class="row justify-content-center mb-0 g-3">
                             <div class="col-md-4 d-grid">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Simpan') }}
@@ -82,7 +82,7 @@
         window.Echo = new Echo({
             broadcaster: 'pusher',
             key: '123321',
-            wsHost: '127.0.0.1',
+            wsHost: `{{ env('PUSHER_HOST', '127.0.0.1') }}`,
             wsPort: 6001,
             forceTLS: false,
             disableStats: true,

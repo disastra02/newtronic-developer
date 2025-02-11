@@ -7,10 +7,10 @@
             <div class="card">
                 <div class="card-header">
                     <div class="row align-items-center">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6 col-6">
                             {{ __('Data Transaksi') }}
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6 col-6">
                             <div class="text-end">
                                 <a class="btn btn-primary" href="{{ route('transaksi.create') }}">Tambah Transaksi</a>
                             </div>

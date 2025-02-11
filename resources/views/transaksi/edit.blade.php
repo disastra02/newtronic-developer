@@ -25,27 +25,29 @@
                             </div>
                         @endif
                         
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Produk</th>
-                                    <th scope="col">Harga</th>
-                                    <th scope="col">Stok</th>
-                                    <th scope="col">Jumlah</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{{ $produk->produk }}</td>
-                                    <td>{{ $produk->harga }}</td>
-                                    <td>{{ $produk->stok }}</td>
-                                    <td width="10%">
-                                        <input type="hidden" name="produk" value="{{ $produk->id }}">
-                                        <input id="quantity" type="number" min="1" class="form-control" name="quantity" value="{{ $detail->quantity }}">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Produk</th>
+                                        <th scope="col">Harga</th>
+                                        <th scope="col">Stok</th>
+                                        <th scope="col">Jumlah</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{{ $produk->produk }}</td>
+                                        <td>{{ $produk->harga }}</td>
+                                        <td>{{ $produk->stok }}</td>
+                                        <td width="10%">
+                                            <input type="hidden" name="produk" value="{{ $produk->id }}">
+                                            <input id="quantity" type="number" min="1" class="form-control" name="quantity" value="{{ $detail->quantity }}">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
                         <div class="row mb-0">
                             <div class="col-md-12 text-end">

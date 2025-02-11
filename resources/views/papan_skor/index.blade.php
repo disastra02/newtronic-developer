@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Papan Skor') }}</div>
                 <div class="card-body">
-                    <div class="row">
+                    <div class="row g-3">
                         <div class="col-md-6">
                             <div class="card h-100">
                                 <div class="card-header">Tampilan Skor</div>

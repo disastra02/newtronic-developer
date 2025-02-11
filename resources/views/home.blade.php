@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <h3>Newtronic  Developer</h3>
                     <hr>
-                    <div class="row">
+                    <div class="row g-3">
                         <div class="col-md-4">
                             <div class="card h-100">
                                 <div class="card-header d-flex justify-content-between align-items-center">

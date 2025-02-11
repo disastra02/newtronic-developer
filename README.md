@@ -32,11 +32,11 @@ php artisan migrate --seed
 ```
 5. Jalankan Aplikasi
 ```sh
-php artisan serve
+php artisan serve --host=0.0.0.0
 ```
 6. Jalankan WebSocket (Perlu dijalankan, untuk studi kasus #3) 
 ```sh
-php artisan websockets:serve
+php artisan websockets:serve --host=0.0.0.0
 ```
 7. Akses Aplikasi 
 ```sh
