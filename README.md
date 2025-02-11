@@ -13,34 +13,34 @@ Ikuti langkah-langkah berikut untuk menginstal aplikasi ini.
 
 1. Clone Repository
 ```sh
-    git clone https://github.com/disastra02/newtronic-developer.git
+git clone https://github.com/disastra02/newtronic-developer.git
 ```
 2. Install Dependensi
 ```sh
-    composer install
+composer install
 ```
 3. Konfigurasi
 Salin file .env.example menjadi .env dan konfigurasi database sesuai dengan konfigurasi dilaptop:
 ```sh
-    cp .env.example .env
-    php artisan key:generate
+cp .env.example .env
+php artisan key:generate
 ```
 4. Migrasi dan Seeder
 Jalankan migrasi database dan seeder untuk data awal (user dan produk):
 ```sh
-    php artisan migrate --seed
+php artisan migrate --seed
 ```
 5. Jalankan Aplikasi
 ```sh
-    php artisan serve
+php artisan serve
 ```
 6. Jalankan WebSocket (Perlu dijalankan, untuk studi kasus #3) 
 ```sh
-    php artisan websockets:serve
+php artisan websockets:serve
 ```
 7. Akses Aplikasi 
 ```sh
-    http://localhost:8000
+http://localhost:8000
 ```
 
 ## Menjalankan Aplikasi
