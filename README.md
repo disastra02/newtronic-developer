@@ -49,10 +49,10 @@ Pastikan langkah-langkah diatas telah berhasil terinstal, setelah itu berikut pa
 
 ### Studi Kasus #1
 
-Ada beberapa user yang dapat digunakan :
-- Email : admin@gmail.com | Password : 12345678 (User untuk menambahkan produk dan bisa melakukan transaksi)
-- Email : user1@gmail.com | Password : 12345678 (User untuk melakukan transaksi)
-- Email : user2@gmail.com | Password : 12345678 (User untuk melakukan transaksi)
+Ada beberapa user yang dapat digunakan:
+- Email: admin@gmail.com | Password: 12345678 (User untuk menambahkan produk dan bisa melakukan transaksi)
+- Email: user1@gmail.com | Password: 12345678 (User untuk melakukan transaksi)
+- Email: user2@gmail.com | Password: 12345678 (User untuk melakukan transaksi)
 
 Setelah login maka dapat digunakan untuk menambah produk ataupun melakukan transaksi.
 
@@ -62,7 +62,7 @@ Untuk pertama kali yaitu dengan klik tombol "Crawl Data" kemudian akan otomatis 
 
 ### Studi Kasus #3
 
-Ada dua tampilan : 
+Ada dua tampilan: 
 - Tampilan papan skor, jika data ada maka akan tampil papan skor sesuai dengan jenis olahraga (Sepak Bola, Basket, Voli).
 - Tampilan operator, untuk memasukkan data skor dari jenis olahraga yang dipilih.
 
